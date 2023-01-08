@@ -1,0 +1,172 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+
+  font-family: 'Roboto', sans-serif;
+
+  --primary-color: #ffffff;
+  --secundary-color: #02ecb9;
+  --hover-primary-color: #747070;
+  --text-color: #E1E1E6;
+  
+
+}
+
+.hide {
+  display: none;
+}
+
+/* body */
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  max-height: auto;
+  background-image: url('./images/mountains-universe-1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--primary-color);
+
+  position: relative;
+  text-decoration: none;
+
+}
+
+.menu{
+  margin-top: 4rem;
+  margin-left: 7.2rem;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+
+.menu a{
+  margin-left: 3.2rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+.menu a:hover {
+  transform: scale(1.4);
+  opacity: 0.9;
+  text-shadow: 1px .3px var(--secundary-color);
+}
+
+.homePage{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 21.2rem;
+}
+
+.homePage h1 {
+  font-size: 4.8rem;
+  margin-bottom: 2.4rem;
+}
+
+.homePage button{
+  width: 19.5rem;
+  height: 4.8rem;
+  background-color: unset;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+}
+
+.homePage button a{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+  
+.homePage button:hover{
+  transform: scale(1.1);
+  border-color: var(--secundary-color);
+  cursor: pointer;
+}
+
+.universe{
+  background-image: url('./images/mountains-universe02.png');
+  
+}
+
+.exploration{
+  background-image: url('./images/mountains-universe-3.png');
+}
+
+.universePage,
+.explorationPage {
+  position: relative;
+  left: 10.2rem;
+  top: 10.3rem;
+  
+}
+.universePage h1,
+.explorationPage h1 {
+  position: relative;
+  bottom: 1.6rem;
+  font-size: 4.8rem;
+}
+
+.universePage a, 
+.explorationPage a{
+  text-decoration: none;
+  font-size: 1.8rem;
+  line-height: 160%;
+  color: var(--text-color);
+}
+
+@media (max-width: 484px) {
+  .homePage h1 {
+    font-size: 3.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .homePage button{
+    width: 14rem;
+  }
+  .homePage button a{
+    font-size: 1.1rem;
+  }
+  .menu{
+    margin-left: 2rem;
+  }
+
+  .menu a{
+    font-size: 1.2rem;
+  }
+
+  .universePage,
+  .explorationPage {
+    left: 2rem;
+    top: 12rem;
+  }
+
+
+  .universePage h1,
+  .explorationPage h1 {
+  font-size: 3.4rem;
+  }
+
+  .universePage a,
+  .explorationPage a {
+    
+    font-size: 1rem;
+  }
+  
+}
